@@ -1,5 +1,26 @@
 # 拂尘
 
+浏览器里的 Windows / Mac 整理工作台。删除必须你确认，**不会静默自动删**。
+
+## 怎么用
+
+需要 [Node.js 20](https://nodejs.org/) 或以上。
+
+```bash
+git clone https://github.com/xuanske/fuchen.git
+cd fuchen
+npm install
+npm run dev
+```
+
+终端会给出本地地址，用 **Chrome 或 Edge 桌面版** 打开。选 Downloads、Desktop 等文件夹后扫描。Safari / 手机浏览器没有文件夹授权，只能看演示扫描。
+
+国内克隆可用：
+
+```bash
+git clone https://ghproxy.net/https://github.com/xuanske/fuchen.git
+```
+
 浏览器里的 Windows / Mac 整理工作台。
 
 选 Downloads、Desktop 等文件夹后扫描重复文件和尘余，列出可回收体积。删除必须你确认，**不会静默自动删**。

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --font-display: "Songti SC", "STSong", "Noto Serif SC", serif;
+  --color-background: #f4efe6;
+  --color-foreground: #2a241c;
+  --color-card: #faf6ef;
+  --color-card-foreground: #2a241c;
+  --color-primary: #8a6a3b;
+  --color-primary-foreground: #f4efe6;
+  --color-secondary: #ebe4d6;
+  --color-secondary-foreground: #2a241c;
+  --color-muted: #ebe4d6;
+  --color-muted-foreground: #7a7166;
+  --color-accent: #8a6a3b;
+  --color-accent-foreground: #f4efe6;
+  --color-destructive: #b4554a;
+  --color-destructive-foreground: #2a241c;
+  --color-border: #ddd4c6;
+  --color-input: #ddd4c6;
+  --color-ring: #8a6a3b;
+  --color-ok: #3d6b45;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius: 12px;
+  --shadow-border: 0 0 0 1px var(--color-border);
+}
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; }
+  body { background: var(--color-background); color: var(--color-foreground); font-family: var(--font-sans); margin: 0; }
+  h1, h2, h3 { font-family: var(--font-display); }
+  button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer; }
+}
+
+.stagger-in { animation: rise 420ms ease both; }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+.theme-ink {}

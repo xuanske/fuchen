@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>拂尘 · 整理工作台</title>
+<meta name="description" content="浏览器里的 Windows / Mac 整理工作台。扫描重复文件和尘余，删除必须你确认。">
+<style>
+  :root { --bg:#f4efe6; --ink:#2a241c; --mute:#7a7166; --line:#ddd4c6; --acc:#8a6a3b; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 "Songti SC","Noto Serif SC","Source Han Serif SC",serif; }
+  main { max-width:640px; margin:0 auto; padding:48px 24px 80px; }
+  .mark { width:56px; height:56px; border:1px solid var(--line); display:grid; place-items:center; letter-spacing:.4em; font-size:13px; }
+  h1 { font-weight:500; font-size:42px; letter-spacing:.35em; margin:28px 0 8px; }
+  .sub { color:var(--mute); letter-spacing:.12em; margin-bottom:32px; }
+  p { margin:0 0 14px; }
+  ul { padding-left:1.2em; color:var(--ink); }
+  li { margin:6px 0; }
+  .box { border:1px solid var(--line); padding:18px 20px; margin:28px 0; background:#faf6ef; }
+  .warn { font-size:14px; color:var(--mute); }
+  footer { margin-top:48px; font-size:13px; color:var(--mute); letter-spacing:.08em; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark">尘</div>
+  <h1>拂尘</h1>
+  <p class="sub">浏览器里的整理工作台</p>
+  <p>选 Downloads、Desktop 等文件夹后扫描重复文件和尘余，列出可回收体积。删除必须你确认，不会静默自动删。</p>
+  <div class="box">
+    <p>能做什么</p>
+    <ul>
+      <li>Chrome / Edge 授权文件夹后扫描</li>
+      <li>同大小文件做指纹，优先标副本，保留原件</li>
+      <li>演示扫描：不授权也能先看一遍流程</li>
+      <li>系统级临时文件请用 Windows 存储感知和磁盘清理</li>
+    </ul>
+  </div>
+  <p class="warn">这是网页工具，不能远程操作电脑，也不能在关掉窗口后后台删文件。不扫描 Windows / Program Files，不做注册表清洁。</p>
+  <footer>拂尘 · 筹算 · 开窍 · 玄鉴</footer>
+</main>
+</body>
+</html>

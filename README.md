@@ -27,6 +27,16 @@ git clone https://ghproxy.net/https://github.com/xuanske/fuchen.git
 
 系统级临时文件请用 Windows 自带的**存储感知**和**磁盘清理（含系统文件）**。拂尘负责你授权的用户文件夹：重复文件、安装包、缓存、陈旧压缩包。
 
+
+## 和同类不同
+
+CCleaner 一类会推销会员、注册表清理和后台加速。拂尘不做这些。
+
+- 开源、无广告、无遥测
+- 只扫你授权的文件夹，系统盘请用 Windows 存储感知
+- 删除必须确认，默认不自动删
+- 可导出清理清单，先看再动手
+
 ## 能做什么
 
 - Chrome / Edge 授权文件夹（File System Access API）

@@ -10,7 +10,7 @@
 
 - Chrome / Edge 授权文件夹（File System Access API）
 - 也可安装成 PWA，打开后再扫已授权的夹
-- 同大小文件做 SHA-256 指纹，优先标 `file (1)` / 副本为可删，保留原件
+- 同大小文件做 SHA-256 指纹，优先标 `文件 (1)` / 副本为可删，保留原件
 - 演示扫描，不授权也能先看一遍流程
 - 自动扫描可开，自动删除默认关
 - 系统清单：存储感知、回收站、开机项、卸载残留（AppData 缓存）、微信、浏览器
@@ -25,4 +25,4 @@
 
 需要较新的 Chromium 桌面浏览器。Safari / 手机浏览器没有文件夹授权。
 
-姐妹项目：[筹算](https://github.com/xuanske/chousuan) · [开窍](https://github.com/xuanske/kaiqiao)
+姊妹项目：[筹算](https://github.com/xuanske/chousuan) · [开窍](https://github.com/xuanske/kaiqiao)

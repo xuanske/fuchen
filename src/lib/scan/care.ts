@@ -11,13 +11,21 @@ export const CARE_ITEMS: CareItem[] = [
     os: "win",
     title: "打开存储感知",
     detail:
-      "Win + I → 系统 → 存储 → 存储感知。打开后设每周运行。回收站 30 天再清。下载文件夹选「从不」——里面常有要留的文件。这才是真正的后台自动清理。",
+      "Win + I → 系统 → 存储 → 存储感知。打开「自动清理用户内容」，每周跑一次。临时文件交给它。回收站设 30 天再清。下载文件夹选「从不」——里面常有要留的文件。这才是真正的后台自动清理。",
+  },
+  {
+    id: "cleanup-recs",
+    os: "win",
+    title: "看一遍清理建议",
+    detail:
+      "设置 → 系统 → 存储 → 清理建议。Windows 会标出下载里的大文件、长期不用的应用、已经同步到 OneDrive 的本地副本。系统垃圾走这里，重复文件再回来用拂尘。",
   },
   {
     id: "recycle",
     os: "both",
     title: "清空回收站",
-    detail: "桌面回收站图标上右键 → 清空回收站。删过的文件其实还占盘。Mac 打开废纸篓，点「清倒」。不要用 Shift+Delete，删错没法找回。",
+    detail:
+      "桌面回收站图标上右键 → 清空回收站。删过的文件其实还占盘。Mac 打开废纸篓，点「清倒」。不要用 Shift+Delete，删错没法找回。也不要天天清空：频繁写删会磨固态硬盘。",
   },
   {
     id: "temp",
@@ -32,6 +40,13 @@ export const CARE_ITEMS: CareItem[] = [
     detail: "开始菜单搜「磁盘清理」，选系统盘，再点「清理系统文件」。重点勾选「Windows 更新清理」和「传递优化文件」。这往往比清用户文件夹腾得更多。",
   },
   {
+    id: "onedrive",
+    os: "win",
+    title: "云盘文件改为仅联机",
+    detail:
+      "设置 → 系统 → 存储 → 清理建议 → 同步到云端的文件。已经在 OneDrive 里的，可改成「仅联机」，本地只留占位。拂尘不会替你做这一步。",
+  },
+  {
     id: "startup",
     os: "win",
     title: "关掉多余开机项",
@@ -41,7 +56,7 @@ export const CARE_ITEMS: CareItem[] = [
     id: "uninstall",
     os: "both",
     title: "卸载长期不用的软件",
-    detail: "设置 → 应用（Windows）或程序鸚/启动台里的闲置 App。杀毒套装、多年前的播放器优先。卸载后残留多半在 AppData，体积大再手动清。",
+    detail: "设置 → 应用（Windows）或程序坞/启动台里的闲置 App。杀毒套装、多年前的播放器优先。卸载后残留多半在 AppData，体积大再手动清。",
   },
   {
     id: "leftover",
@@ -49,6 +64,13 @@ export const CARE_ITEMS: CareItem[] = [
     title: "看一眼卸载残留",
     detail:
       "资源管理器地址栏输入 %LocalAppData%。Discord / Teams / Adobe / Steam / VS Code 的 Cache、Code Cache、logs、shadercache 可删。不要动 Windows、Installer、Program Files。注册表清洁软件别装。",
+  },
+  {
+    id: "no-defrag",
+    os: "win",
+    title: "固态硬盘不要做碎片整理",
+    detail:
+      "设置 → 系统 → 存储 → 高级存储设置 → 驱动器优化。SSD 让 Windows 自己 TRIM。第三方碎片整理、注册表清理、驱动强推软件都不要装。",
   },
   {
     id: "wechat",

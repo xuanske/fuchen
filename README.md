@@ -2,6 +2,12 @@
 
 浏览器里的 Windows / Mac 整理工作台。删除必须你确认，**不会静默自动删**。
 
+## 直接打开（国内）
+
+浏览器打开：[https://cdn.jsdelivr.net/gh/xuanske/fuchen@main/docs/index.html](https://cdn.jsdelivr.net/gh/xuanske/fuchen@main/docs/index.html)
+
+打不开就下载 Releases 里的 zip，解压后打开 `index.html`。
+
 ## 怎么用
 
 需要 [Node.js 20](https://nodejs.org/) 或以上。

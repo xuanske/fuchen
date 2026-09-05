@@ -1,0 +1,9 @@
+{
+  "name": "拂尘",
+  "short_name": "拂尘",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4efe6",
+  "theme_color": "#8a6a3b",
+  "lang": "zh-CN"
+}
